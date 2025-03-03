@@ -1,20 +1,23 @@
 package hafta1;
 
+
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-    System.out.println("Hafta1");
+        Scanner scanner = new Scanner(System.in);
 
-        int x = 20;
-        int y = 40;
+        System.out.println("Adınızı giriniz: ");
+        String name = scanner.nextLine();
 
-        boolean işlem = x >10;
-        boolean işlem1 = x+y > 100;
-        boolean işlem2 = y % x < 120;
+        System.out.println("Yaşınızı giriniz: ");
+        int age = scanner.nextInt();
+
+        System.out.println("Merhaba " + name + ", " + age +" yaşındasın!");
+
+        scanner.close();
 
 
-        System.out.println(işlem);
-        System.out.println(işlem1);
-        System.out.println(işlem2);
     }
 }
