@@ -43,7 +43,7 @@ public class ManavKasa {
         System.out.printf("Elma: %.2f TL\n", elmaTutar);
         System.out.printf("Domates: %.2f TL\n", domatesTutar);
         System.out.printf("Muz: %.2f TL\n", muzTutar);
-        System.out.printf("Patlıcan: %.2f TL\n", patlicanTutar);
+        System.out.printf("Patlıcan: %.2f TL", patlicanTutar);
         System.out.printf("\nToplam Tutar: %.2f TL\n", toplamTutar);
     }
 
