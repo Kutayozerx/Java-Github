@@ -8,14 +8,15 @@ public class ArtıkYıl {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Yıl Giriniz: ");
-        int yil = scanner.nextInt();
+        int yıl = scanner.nextInt();
 
-        if ((yil % 4 == 0 && yil % 100 != 0) || (yil % 400 == 0)) {
-            System.out.println(yil + " bir artık yıldır! ");
+        if ((yıl % 4 == 0 && yıl % 100 != 0) || (yıl % 400 == 0)) {
+            System.out.println(yıl + " bir artık yıldır! ");
         } else {
-                System.out.println(yil + " bir artık yıl değildir! ");
+                System.out.println(yıl + " bir artık yıl değildir! ");
             }
         }
     }
+
 
 
