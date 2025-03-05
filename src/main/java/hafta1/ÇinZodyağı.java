@@ -8,9 +8,9 @@ public class ÇinZodyağı {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Doğum yılınızı giriniz: ");
-        double dogumyılı = scanner.nextDouble();
+        int dogumyılı = (int) scanner.nextDouble();
 
-        double burc = dogumyılı % 12;
+        int burc = dogumyılı % 12;
 
         switch ((int) burc) {
 
