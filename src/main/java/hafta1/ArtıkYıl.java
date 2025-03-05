@@ -10,8 +10,10 @@ public class ArtıkYıl {
         System.out.println("Yıl Giriniz: ");
         int yıl = scanner.nextInt();
 
-        if ((yıl % 4 == 0 && yıl % 100 != 0) || (yıl % 400 == 0)) {
+        if (yıl % 4 == 0 && yıl % 100 != 0) {
             System.out.println(yıl + " bir artık yıldır! ");
+        } else if (yıl % 400 == 0) {
+                System.out.println(yıl + "bir artık yıldır! ");
         } else {
                 System.out.println(yıl + " bir artık yıl değildir! ");
             }
