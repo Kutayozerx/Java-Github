@@ -9,7 +9,7 @@ public class TersÜçgen {
         Scanner scanner = new Scanner(System.in);
 
         int number;
-
+        // Kullanıcıdan basamak sayısı alınıyor
         System.out.println("Ters Üçgenin Basamak sayısını giriniz: ");
         number = scanner.nextInt();
 
@@ -19,7 +19,7 @@ public class TersÜçgen {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-            System.out.println();
+            System.out.println(); //Bir satırı tamamlayınca alt satıra geçmesi için
             
         }
     }
