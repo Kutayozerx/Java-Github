@@ -8,9 +8,11 @@ public class MükemmelSayı {
 
         Scanner scanner = new Scanner(System.in);
 
+        // kullanıcıdan sayı alıyoruz
         System.out.println("Bir sayı giriniz: ");
         int sayı = scanner.nextInt();
 
+        //Mükemmel sayıyı bulan for döngüsü
         int toplam = 0;
         for (int i = 1; i < sayı; i++) {
             if (sayı % i == 0) {
@@ -18,6 +20,7 @@ public class MükemmelSayı {
             }
        }
 
+        // bulunan sonucu ekrana yazdırıyoruz
     if (toplam == sayı) {
         System.out.println(sayı + " Sayısı Mükemmel bir sayıdır.");
     } else {
