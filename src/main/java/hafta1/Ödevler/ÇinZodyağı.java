@@ -1,4 +1,4 @@
-package hafta1;
+package hafta1.Ödevler;
 
 import java.util.Scanner;
 
