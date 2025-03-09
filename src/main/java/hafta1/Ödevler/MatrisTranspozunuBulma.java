@@ -1,32 +1,45 @@
 package hafta1.Ödevler;
 
+import java.util.Scanner;
+
 public class MatrisTranspozunuBulma {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[][] matris = new int[2][3];
+        System.out.println("Matrix'in satır sayısını giriniz: ");
+        int satır = scanner.nextInt();
+        System.out.println("Matrix'in sütun sayısını giriniz: ");
+        int sütun= scanner.nextInt();
 
-        matris [0][0] = 1;
-        matris [0][1] = 2;
-        matris [0][2] = 3;
-
-        matris [1][0] = 4;
-        matris [1][1] = 5;
-        matris [1][2] = 6;
-
-        System.out.println("Matris: ");
-        for (int i = 0; i < matris.length; i++) {
-            for (int j = 0; j < matris[i].length; j++) {
-                System.out.print(matris[i][j] + "\t");
+        int[][] matris = new int[satır][sütun];
+        System.out.println("Matrisin elemanlarını girin: ");
+        for (int i = 0; i < satır; i++) {
+            for (int j = 0; j < sütun; j++) {
+                matris[i][j] = scanner.nextInt();
             }
-            System.out.println();
         }
-        System.out.println("Transpoze: ");
-        for (int i = 0; i < matris.length; i++) {
-            for (int j = 0; j < matris[j].length; j++) {
-                System.out.print(matris[j][i] + "\t");
+        int[][] transpoz = new int[sütun][satır];
+
+        for (int i = 0; i < satır; i++) {
+            for (int j = 0; j < sütun; j++) {
+                transpoz[j][i] = matris[i][j];
             }
-            System.out.println();
         }
+            System.out.println("Matris: ");
+            for (int i = 0; i < satır; i++) {
+                for (int j = 0; j < sütun; j++) {
+                    System.out.print(matris[i][j] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println("Transpoze: ");
+            for (int i = 0; i < sütun; i++) {
+                for (int j = 0; j < satır; j++) {
+                    System.out.print(transpoz[i][j] + " ");
+                }
+                System.out.println();
+            }
+        }
+
     }
-}
