@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class DiziCopy {
     public static void main(String[] args) {
 
-
+/*
 
         int[] original = {1, 2, 3, 4, 5};
         int[] copy = original.clone();
@@ -50,7 +50,7 @@ public class DiziCopy {
         System.arraycopy(source, 1, destination, 2, 2);
         //Bu kod parçacığı, 'source' adlı bir dizinin belirli bir bölümünü (1. indeksten itibaren 2 eleman) 'destination' adlı bir dizinin belirli bir konumuna (2. indeks) kopyalar.
 
-
+*/
 
 
 
