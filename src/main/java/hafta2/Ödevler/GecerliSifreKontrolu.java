@@ -10,14 +10,17 @@ public class GecerliSifreKontrolu {
         System.out.println("Şifrenizi giriniz: ");
         String sifre = scanner.nextLine();
 
-        if (sifre.length() < 8) {
-            System.out.println("Geçersiz Şifre.");
-        }
-
-        if (sifre.contains(" ")) {
+        if (sifre.length() >= 8 &&
+                !sifre.contains(" ") &&
+                Character.isUpperCase(sifre.charAt(0)) &&
+                sifre.endsWith("?")) {
+            System.out.println("Geçerli Şifre");
+        } else {
             System.out.println("Geçersiz Şifre");
         }
-        // if ()
+
+        }
+
 
 
 
@@ -25,6 +28,3 @@ public class GecerliSifreKontrolu {
 
 
     }
-
-
-}
