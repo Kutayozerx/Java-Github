@@ -1,4 +1,4 @@
-package hafta2.oop;
+package hafta2.oop.Ders.Animall;
 
 public class Cat extends BigCat {
 

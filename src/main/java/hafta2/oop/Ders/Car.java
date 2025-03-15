@@ -1,4 +1,6 @@
-package hafta2.oop;
+package hafta2.oop.Ders;
+
+import hafta2.oop.Vehicle;
 
 public class Car implements Vehicle {
 

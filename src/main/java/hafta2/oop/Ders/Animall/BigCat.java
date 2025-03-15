@@ -1,6 +1,6 @@
-package hafta2.oop;
+package hafta2.oop.Ders.Animall;
 
-public abstract class BigCat extends Animal{
+public abstract class BigCat extends Animal {
 
 private int speed;
 
