@@ -19,7 +19,7 @@ public class CarTest {
 
        // Vehicle vehicle = new Vehicle(); // soyut class ve interfaceden nesne oluşturulamaz.
 
-            }
-        }
+
+
     }
 }
